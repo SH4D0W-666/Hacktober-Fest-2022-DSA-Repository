@@ -1,0 +1,217 @@
+Manager:
+
+    Calculator:
+
+<Calculator>:
+    name: 'Calculator'
+
+    BoxLayout:
+
+        orientation : 'vertical'
+        size: root.width, root.height
+
+        TextInput:
+            id: val
+            text: '0'
+            font_name:'Lhandw'
+            valign: 'middle'
+            halign: 'right'
+            font_size: 48
+            size_hint: (1,.15)
+
+        GridLayout:
+            cols: 4
+            rows:6
+
+            Button:
+                id: clear
+                size_hint:(.2,.2)
+                font_size: 28
+                text: 'C'
+                background_color: (157/255,157/255,167/255,1)
+                on_release:
+                    root.clear()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: u'\u00AB'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.slice()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: 'e'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(2.71828)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                background_color: (157/255,157/255,167/255,1)
+                text: 'π'
+                on_release: root.use(3.14159)
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '1'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(1)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '2'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(2)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '3'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(3)
+
+
+            Button:
+                id:add
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '+'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.add()
+
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '4'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(4)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '5'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(5)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '6'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(6)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '-'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.sub()
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '7'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(7)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '8'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(8)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '9'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(9)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '*'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.mul()
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '1/x'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.inv()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '0'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use(0)
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '.'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.use('.')
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '/'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.div()
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: 'Exit'
+                background_color: (157/255,157/255,167/255,1)
+                on_release:
+                    root.bye()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: 'Factorial'
+                background_color: (157/255,157/255,167/255,1)
+                on_release:   root.factorial()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: 'Exponent'
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.exp()
+
+
+            Button:
+                size_hint:(.2,.2)
+                font_size: 28
+                text: '='
+                background_color: (157/255,157/255,167/255,1)
+                on_release: root.ans()
+
